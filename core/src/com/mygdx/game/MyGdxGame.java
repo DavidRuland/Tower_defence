@@ -26,8 +26,8 @@ public class MyGdxGame extends ApplicationAdapter {
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 		batch.begin();
 		batch.draw(img, X,Y);
-		X+=5;
-		Y+=5;
+		X+=6;
+		Y-=6;
 		batch.end();
 	}
 }
