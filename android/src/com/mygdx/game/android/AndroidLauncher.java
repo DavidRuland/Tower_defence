@@ -2,14 +2,12 @@ package com.mygdx.game.android;
 
 import android.os.Bundle;
 
-import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.backends.android.AndroidApplication;
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
 
-import com.mygdx.game.MyGdxGame;
-
 public class AndroidLauncher extends AndroidApplication {
-	assetFolder aF;
+	entryPoint eP;
+	GameScreen GameScreen;
 	@Override
 	protected void onCreate (Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -17,8 +15,8 @@ public class AndroidLauncher extends AndroidApplication {
 		AndroidApplicationConfiguration config= new AndroidApplicationConfiguration();
 		config.useAccelerometer = false;
 		config.useCompass = false;
-        aF=new assetFolder();
-		initialize(aF, config);
+        eP=new entryPoint();
+		initialize(eP, config);
 
 	}
 }
